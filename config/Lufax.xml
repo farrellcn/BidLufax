@@ -7,15 +7,15 @@
 			<NextPage>https://list.lu.com/list/transfer-p2p(\d+)</NextPage>
 			<SearchDeep>2</SearchDeep>
 			<MaxDeep>8</MaxDeep>
-			<Regex>class="product-list[\s\S]*?href='([\S\s]*?)' target="_blank" title="([\S\s]*?)"&gt;([\S\s]*?)&lt;/a&gt;[\S\s]*?title="([\S\s]*?)"&gt;[\S\s]*?class="num-style"&gt;([\S\s]*?)%&lt;/p&gt;[\S\s]*?&lt;li class="invest-period"&gt;[\S\s]*?&lt;p&gt;([\S\s]*?)个月&lt;/p&gt;[\S\s]*?&lt;li class="product-value"&gt;[\S\s]*?class="collection-currency"&gt;([\S\s]*?)元&lt;/span&gt;&lt;/p&gt;[\S\s]*?num-style"&gt;([\S\s]*?)%[\S\s]*?class="num-style"&gt;([\S\s]*?)&lt;/em&gt;元</Regex>
+			<Regex>class="product-list[\s\S]*?href='([\S\s]*?)' target="_blank"[\S\s]*?&gt;([\S\s]*?)&lt;/a&gt;[\S\s]*?title="([\S\s]*?)"&gt;[\S\s]*?class="num-style"&gt;([\S\s]*?)%&lt;/p&gt;[\S\s]*?&lt;li class="invest-period"&gt;[\S\s]*?&lt;p&gt;([\S\s]*?)个月&lt;/p&gt;[\S\s]*?&lt;li class="product-value"&gt;[\S\s]*?class="collection-currency"&gt;([\S\s]*?)元&lt;/span&gt;&lt;/p&gt;[\S\s]*?num-style"&gt;([\S\s]*?)%[\S\s]*?class="num-style"&gt;([\S\s]*?)&lt;/em&gt;元</Regex>
 			<DataFields>
 				<Field Name="link" DataType="_STRING" MatchGroupIndex="0"/>
 				<Field Name="title" DataType="_STRING" MatchGroupIndex="1"/>
-				<Field Name="rate" DataType="_STRING" MatchGroupIndex="4"/>
-				<Field Name="term" DataType="_STRING" MatchGroupIndex="6"/>
-				<Field Name="amount" DataType="_STRING" MatchGroupIndex="9"/>
-				<Field Name="publisherType" DataType="_STRING" MatchGroupIndex="10"/>
-				<Field Name="price" DataType="_STRING" MatchGroupIndex="10"/>
+				<Field Name="interestRate" DataType="_STRING" MatchGroupIndex="3"/>
+				<Field Name="period" DataType="_STRING" MatchGroupIndex="4"/>
+				<Field Name="amount" DataType="_STRING" MatchGroupIndex="5"/>
+				<Field Name="depreciation" DataType="_STRING" MatchGroupIndex="6"/>
+				<Field Name="price" DataType="_STRING" MatchGroupIndex="7"/>
 			</DataFields>
 		</ProductList>
 		<ProductDetail>
